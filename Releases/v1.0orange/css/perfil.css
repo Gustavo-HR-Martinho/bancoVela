@@ -1,0 +1,138 @@
+body{
+    background-image: url(../images/loginBg.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.wholeBody{
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 0rem;
+    bottom: 0px;
+    width: 100%;
+}
+.card{
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 1);
+    width: 80%;
+    height: 100%;
+    display: block;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.amount{
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    width: 80%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+}
+.amount-item{
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.amount-item p, h1{
+    color: rgba(0, 0, 0, 0.7);;
+    font-weight: bold;
+    margin: 0;
+    align-items: center;
+}
+.amount-text{
+    font-size: 2vw;
+}
+.blocks{
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    width: 80%;
+    height: 50vh;
+    display: block;
+    align-items: center;
+}
+.blocks-row{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+.block-item{
+    height: 90%;
+    width: 20%;
+    margin: 0 auto;
+    background-image: linear-gradient(90deg ,var(--laranja-base), var(--laranja-degrade));
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+.block-item:hover{
+    background-image: linear-gradient(90deg, var(--laranja-base), #d46802);
+}
+.block-logo{
+    width: 100%;
+    height: 50%;
+}
+.block-text{
+    width: 100%;
+    height: 50%;
+}
+.block-item h5{
+    color: white;
+    font-size: 1.5vw;
+    margin: 0 0.5rem;
+}
+.block-image{
+    height: 50%;
+    margin: 0.5rem;
+}
+.credito-fatura{
+    height: 50%;
+    font-size: 1.5vw;
+}
+.credito-limite{
+    height: 50%;
+    font-size: 1vw;
+}
+.buttons{
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    width: 80%;
+    height: 15vw;
+    display: block;
+    align-items: center;
+}
+.buttons-row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.buttons-item{
+    margin: 0 auto;
+    display: block;
+}
+button{
+    width: 20vw;
+    font-size: 2vw;
+    height: auto;
+}
+.back-buttom{
+    width: 5vw;
+}
+@media (max-width: 600px){
+    .blocks-row{
+        display: block;
+    }
+    .block-item{
+        width: 70%;
+        height: 4vh;
+        margin: 10px auto;
+    }
+}

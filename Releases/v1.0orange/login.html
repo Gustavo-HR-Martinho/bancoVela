@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vela</title>
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/login.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+</head>
+<body>
+    <nav class="back">
+        <div class="back-buttom">
+            <a href="index.html"><img src="images/backbuttom.png" alt="Botão Voltar" class="buttom-image"></a>
+        </div>
+    </nav>
+    <main class="wholeBody">
+        <div class="card">
+            <div class="card-text">
+                <h1>Faça login</h1>
+                <input type="text" placeholder="CPF" id="cpf" autocomplete="off">
+                <p class="error pCpf">Digite um cpf</p>
+                <input type="password" id="senha" placeholder="Senha">
+                <p class="error pSenha">Digite uma senha</p>
+                <button onclick="return login()">Entrar</button>
+                <a class="esqueci"><p style="cursor: pointer;">Esqueci minha senha</p></a>
+            </div>
+        </div>
+    </main>
+    <script src="javascript/mascara.js"></script>
+    <script src="javascript/verificacao.js"></script>
+</body>
+</html>

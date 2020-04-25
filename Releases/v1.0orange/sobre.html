@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vela</title>
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+</head>
+<body>
+    <div class="navbar" id="navbarID">
+        <a class="navbar-disable"><img src="images/navLogo.png" alt="Logo Vela" class="navbar-logo"></a>
+        <a href="index.html" class="pc"><p>Início</p></a>
+        <a href="#" class="pc selected"><p>Quem somos</p></a>
+        <a href="login.html" class="navbar-right selected pc"><p>Login</p></a>
+        <a href="registro.html" class="sejaVela pc"><p>Seja Vela</p></a>
+        <a class="icon" href="javascript:void(0);" onclick="myFunction()"><img src="images/menuicon.png" class="navbar-menu" alt="Botão Menu"></a>
+    </div>
+
+    <main class="main-body">
+        <div class="banner">
+            <div class="about-card">
+                <div class="about-image">
+                    <img src="images/sobreWorking.png" alt="Conheça a gente melhor" class="about-pic">
+                </div>
+                <div class="about-text">
+                    <h1>Conheça a gente</h1>
+                    <p>O vela surgiu quando um grupo de estudantes de Sistemas de Informação estavam em um bar conversando sobre fintecs e como elas impactavam seus clientes, o grupo de amigos percebeu que nenhuma das fintecs faziam um relatório de gastos para o cliente.</p>
+                    <p>Após esta conversa nós decidimos criar a nossa fintec, com as caracteristicas que nós queriamos. E assim que o Vela surgiu</p>
+                    <p>Atualmente nós estamos focados em ampliar nosso público alvo, visando abranger universitário, empresas e muito mais.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="creditos">
+        <p>Criado por Alunos de Sistema de Informação</p>
+    </div>
+    <script>
+        function myFunction() {
+    var x = document.getElementById("navbarID");
+    if (x.className === "navbar") {
+      x.className += " responsivo";
+    } else {
+      x.className = "navbar";
+    }
+}
+    </script>
+</body>
+</html>

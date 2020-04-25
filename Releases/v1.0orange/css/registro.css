@@ -1,0 +1,101 @@
+body{
+    background-image: url(../images/loginBg.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.wholeBody{
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 4rem;
+    bottom: 0px;
+    width: 100%;
+}
+.back{
+    background-color: transparent;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+.back-buttom{
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttom-image{
+    width: 3rem;
+    margin: 0 auto;
+}
+.card{
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 1);
+    width: 30%;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.card-title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+.card-title h1{
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.7);
+}
+.card-text{
+    width: 100%;
+    height: 80%;
+}
+.card-text input, button, h1{
+    display: block;
+    align-items: center;
+}
+.card-text h1{
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+.card-text input{
+    width: 50%;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    margin-top: 2rem;
+    outline: none;
+}
+.card-text button{
+    width: 40%;
+    margin: 2rem auto;
+    font-size: 1vw;
+}
+.error{
+    color: red;
+    font-size: 15px;
+    display: none;
+    margin: 0;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+@media (max-width: 900px){
+    .card{
+        width: 90vw;
+    }
+    .card-text input, button{
+        width: 60vw;
+    }
+    .card-text button{
+        font-size: 3vw;
+    }
+}

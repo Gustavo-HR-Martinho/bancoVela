@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vela</title>
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+</head>
+<body>
+    <div class="navbar" id="navbarID">
+        <a class="navbar-disable"><img src="images/navLogo.png" alt="Logo Vela" class="navbar-logo"></a>
+        <a href="#" class="pc selected"><p>Início</p></a>
+        <a href="sobre.html" class="pc"><p>Quem somos</p></a>
+        <a href="login.html" class="navbar-right selected pc"><p>Login</p></a>
+        <a href="registro.html" class="sejaVela pc"><p>Seja Vela</p></a>
+        <a class="icon" href="javascript:void(0);" onclick="myFunction()"><img src="images/menuicon.png" class="navbar-menu" alt="Botão Menu"></a>
+    </div>
+    <main class="main-body">
+        <div class="banner">
+            <div class="banner-image">
+                <div class="banner-text">
+                    <h1>Venha para o Vela e descubra um novo mar de oportunidades.</h1>
+                    <p>Nós procuramos a sua evolução como cliente, para que você possa desbravar novas terras.</p>
+                    <p>Aqui você rende mais do que a poupança, tem cartão de crédito sem anuidade e ainda recebe um relatório de gastos todo fim de mês.</p>
+                    <a href="registro.html"><button>Seja Vela</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="lower">
+        <div class="lower-main">
+            <div class="product-image">
+                <img src="images/monetaryReview.png" alt="Vantagens da Conta Vela" class="lower-image">
+            </div>
+            <div class="product-text">
+                <h2>Receba um relatório de gastos todo mês.</h2>
+                <p>Este é o nosso diferencial, te enviamos um relatório de gastos todo fim de mês, para que você possa saber quais compras mais pesam no seu bolso.</p>
+                <p>Seus relatórios passados ficam salvos no seu perfil e você pode visualizá-los quando e onde quiser.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="creditos">
+        <p>Criado por Alunos de Sistema de Informação</p>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbarID");
+            if (x.className === "navbar") {
+                x.className += " responsivo";
+            }else{
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>
